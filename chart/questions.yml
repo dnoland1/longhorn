@@ -151,6 +151,12 @@ questions:
     min: 1
     max: 10
     label: Default Storage Class Replica Count
+  - variable: persistence.defaultClassRecurringJobs
+    description: "Set recurring jobs for default StorageClass. See https://longhorn.io/docs/0.8.1/snapshots-and-backups/scheduling-backups-and-snapshots/#set-up-recurring-jobs-using-storageclass"
+    group: "Longhorn CSI Driver Settings"
+    type: string
+    default: ""
+    label: Default Storage Class Recurring Jobs
   - variable: defaultSettings.backupTarget
     label: Backup Target
     description: "The target used for backup. Support NFS or S3."
