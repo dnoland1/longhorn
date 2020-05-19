@@ -24,6 +24,8 @@ service:
 persistence:
   defaultClass: true
   defaultClassReplicaCount: 3
+  defaultClassFromBackup: ""
+  defaultClassRecurringJobs: ""
 
 csi:
   attacherImage: ~
